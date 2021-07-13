@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00BCD4"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="132dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="24dp"
+        android:text="Android UI Demo"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="64dp"
+        android:clickable="true"
+        android:onClick="fabOnClicked"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/ic_lock_idle_alarm" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="73dp"
+        android:layout_height="10dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="36dp"
+        android:indeterminate="true"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/cbDemoB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:onClick="buttonClick"
+        android:text="Checkbox Demo"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.437"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/rbDemoB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="buttonClick"
+        android:text="Radiobutton Demo"
+        app:layout_constraintEnd_toEndOf="@+id/cbDemoB"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="@+id/cbDemoB"
+        app:layout_constraintTop_toBottomOf="@+id/cbDemoB" />
+
+    <Button
+        android:id="@+id/lvDemoB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="buttonClick"
+        android:text="ListView Demo"
+        app:layout_constraintEnd_toEndOf="@+id/rbDemoB"
+        app:layout_constraintStart_toStartOf="@+id/rbDemoB"
+        app:layout_constraintTop_toBottomOf="@+id/rbDemoB" />
+
+    <Button
+        android:id="@+id/spDemoB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:onClick="buttonClick"
+        android:text="Spinner Demo"
+        app:layout_constraintEnd_toEndOf="@+id/lvDemoB"
+        app:layout_constraintStart_toStartOf="@+id/lvDemoB"
+        app:layout_constraintTop_toBottomOf="@+id/lvDemoB" />
+
+    <Button
+        android:id="@+id/customB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:onClick="buttonClick"
+        android:text="Custom Adapter Demo"
+        app:layout_constraintEnd_toEndOf="@+id/spDemoB"
+        app:layout_constraintStart_toStartOf="@+id/spDemoB"
+        app:layout_constraintTop_toBottomOf="@+id/spDemoB" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
